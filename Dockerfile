@@ -10,3 +10,6 @@ COPY wgcloud-server-release.jar bin/wgcloud-server-release.jar
 COPY start.sh bin/start.sh
 COPY stop.sh bin/stop.sh
 COPY wgcloud.sql bin/wgcloud.sql
+
+EXPOSE 9999
+ENTRYPOINT ["java","-jar","bin/wgcloud-server-release.jar"]
