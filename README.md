@@ -6,7 +6,7 @@
 wget http://ghproxy.com/https://github.com/LucasLee99/docker-fast-deployment-wgcloud-/blob/main/fast-deploy.sh && chmod +x fast-deploy.sh && ./fast-deploy.sh
 ```
 
-## 特别鸣谢 [源码开发团队](https://github.com/tianshiyeben/wgcloud.git)
+## 特别鸣谢 [源码开发团队](https://github.com/tianshiyeben/wgcloud.git) 更多分享可以在 [TG频道](https://t.me/+U7HfTpOLpNphYWU1) , [TG群组](https://t.me/+EbVwV9gsrk00NjJl) 里 找到
 
-如果有帮到你，请帮忙 star 一下，小生不胜感激！
-更多分享可以在 [TG频道](https://t.me/+U7HfTpOLpNphYWU1) , [TG群组](https://t.me/+EbVwV9gsrk00NjJl) 里 找到
+## 如果有帮到你，请帮忙 star 一下，小生不胜感激！
+
