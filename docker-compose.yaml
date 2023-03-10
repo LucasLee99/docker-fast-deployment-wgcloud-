@@ -1,0 +1,44 @@
+version: '3'
+
+networks:
+  app-web:
+   driver: bridge
+   
+services:
+  wg-cloud:
+    build:
+      context: ./ 
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    networks:
+     - app-web
+    ports:
+     - 9999:9999
+      
+    deploy:
+      restart_policy:
+        condition: on-failure
+        
+  mysql:
+    image: mysql:5.7
+    ports:
+     - 3306:3306
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --explicit_defaults_for_timestamp=true --lower_case_table_names=1 --max_allowed_packet=128M --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"
+    restart: always
+    volumes:
+      - ./:/docker-entrypoint-initdb.d
+    networks:
+     - app-web
+     
+    environment:
+     - TZ=Asia/Shanghai
+     - MYSQL_USER=root
+     - MYSQL_ROOT_PASSWORD=123456
+     - MYSQL_DATABASE=wgcloud
+     - MYSQL_HOST='%'
+     
+    volumes:
+     - ./mysql/data:/var/lib/mysql
+     - ./mysql/my.cnf:/etc/mysql/my.cnf
+     - /etc/localtime:/etc/localtime
