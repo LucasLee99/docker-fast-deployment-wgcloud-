@@ -7,3 +7,6 @@ wget http://ghproxy.com/https://github.com/LucasLee99/docker-fast-deployment-wgc
 ```
 
 ## 特别鸣谢 [源码开发团队](https://github.com/tianshiyeben/wgcloud.git)
+
+如果有帮到你，请帮忙 star 一下，小生不胜感激！
+更多分享可以在 tg频道 , tg群组 找到
