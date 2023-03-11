@@ -36,11 +36,11 @@ services:
      - app-web
      
     environment:
-     - TZ: "Asia/Shanghai"
-     - MYSQL_ROOT_PASSWORD: 123456
-     - MYSQL_DATABASE: wgcloud
-     - MYSQL_ROOT_USER: root
-     - MYSQL_ROOT_HOST: localhost
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: wgcloud
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_HOST: localhost
      
     volumes:
      - ./mysql/data:/var/lib/mysql
