@@ -1,8 +1,4 @@
 version: '3'
-
-networks:
-  app-web:
-   driver: bridge
    
 services:
   wg-cloud:
@@ -11,8 +7,7 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - mysql
-    networks:
-     - app-web
+    network_mode: "service:mysql"
     ports:
      - 9999:9999
       
@@ -32,8 +27,6 @@ services:
     restart: always
     volumes:
       - ./:/docker-entrypoint-initdb.d
-    networks:
-     - app-web
      
     environment:
       TZ: Asia/Shanghai
