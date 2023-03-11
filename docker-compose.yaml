@@ -36,7 +36,7 @@ services:
      - app-web
      
     environment:
-     - TZ: Asia/Shanghai
+     - TZ: "Asia/Shanghai"
      - MYSQL_ROOT_PASSWORD: 123456
      - MYSQL_DATABASE: wgcloud
      - MYSQL_ROOT_USER: root
