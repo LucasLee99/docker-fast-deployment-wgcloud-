@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - mysql
+    network_mode: "service:mysql"
     ports:
      - 9999:9999
      - 3306
@@ -23,7 +24,7 @@ services:
     restart: always
     volumes:
       - ./:/docker-entrypoint-initdb.d
-    network_mode: "service:wg-cloud"
+    
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123456
