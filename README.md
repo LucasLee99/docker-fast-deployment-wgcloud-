@@ -3,7 +3,7 @@
 ## 1. 一键 docker 快速部署 wgcloud 步骤:
 - 下载本能项目的[一键部署脚本](http://ghproxy.com/https://github.com/LucasLee99/docker-fast-deployment-wgcloud-/blob/main/fast-deploy.sh) ， 需要机器上已经安装好 docker 与 docker-compose 运行， 或者直接运行下面的命令
 ```
-wget https://github.com/LucasLee99/docker-fast-deployment-wgcloud-/blob/main/oneinall.sh && chmod +x oneinall.sh && ./oneinall.sh 3.4.5
+wget http://ghproxy.com/https://github.com/LucasLee99/docker-fast-deployment-wgcloud-/blob/main/oneinall.sh && chmod +x oneinall.sh && ./oneinall.sh 3.4.5
 ```
 
 ## 特别鸣谢 [源码开发团队](https://github.com/tianshiyeben/wgcloud.git) 更多分享可以在 [TG频道](https://t.me/+U7HfTpOLpNphYWU1) , [TG群组](https://t.me/+EbVwV9gsrk00NjJl) 里 找到
