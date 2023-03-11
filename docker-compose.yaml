@@ -9,7 +9,6 @@ services:
     network_mode: "service:mysql"
     ports:
      - 9999:9999
-     - 3306
       
     deploy:
       restart_policy:
